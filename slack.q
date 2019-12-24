@@ -13,7 +13,7 @@ url:{` sv apiurl,x}
 post:{[m;c;u;e]
   d:()!(); 
   d[`text]:m;
-  d[`channel]:channelid[c];
+  d[`channel]:channelId[c];
   d[`as_user]:`false;
   d[`username]:u;
   if[count e;d[`icon_emoji]:e];
@@ -31,7 +31,7 @@ encode:{(raze/)$[1=count x;string[key x],"=",$[10h=type value x;;string]value x;
 tok:encode (1#`token)!enlist token
 
 // Retrieve all information on public/private channels and all users
-i. list:{[x;y].j.k .Q.hp[url x;encode_type;tok]}
+i.list:{[x;y].j.k .Q.hp[url x;encode_type;tok]}
 
 channels:i.list[`channels.list;]
 groups  :i.list[`groups.list;]

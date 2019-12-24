@@ -17,7 +17,7 @@ The following is an example of a script which
 - displays the system memory stats within a code block
 
 ```
-$vi slack_script.q
+$vi example.q
 \l slack.q
 
 // The following is a function which correctly formats the string 
@@ -38,7 +38,9 @@ notificationfn:{[u;c]
 Running this function is completed as follows
 
 ```
-$q slack_script.q
+$q example.q
 notificationfn["cmccarthy1";"test_channel"]
 "Message has been posted"
 ```
+
+![Example Output](images/example.png?raw=true "Title")
