@@ -43,4 +43,4 @@ notificationfn["cmccarthy1";"test_channel"]
 "Message has been posted"
 ```
 
-![Example Output](images/example.png?raw=true "Title")
+![Example Output](images/example_image.png?raw=true "Title")
